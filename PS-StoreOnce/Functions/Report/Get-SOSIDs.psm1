@@ -34,7 +34,7 @@ function Get-SOSIDs {
 				if (!$SIDCount) {$SIDCount = 1}
 				[Array] $SSID = $SIDsResponse.document.servicesets.serviceset.properties.ssid
 				[Array] $Name = $SIDsResponse.document.servicesets.serviceset.properties.name
-                [Array] $Product = $SIDsResponse.document.servicesets.serviceset.properties.productClass
+				[Array] $Product = $SIDsResponse.document.servicesets.serviceset.properties.productClass
 				[Array] $Alias = $SIDsResponse.document.servicesets.serviceset.properties.alias
 				[Array] $OverallHealth = $SIDsResponse.document.servicesets.serviceset.properties.overallHealth
 				[Array] $SerialNumber = $SIDsResponse.document.servicesets.serviceset.properties.serialNumber
